@@ -1,4 +1,4 @@
-# Plugin Template
+# Papo
 
 ## Changelog
 
