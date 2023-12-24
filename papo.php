@@ -22,7 +22,9 @@ function papo_plugin_activate() {
 register_activation_hook( __FILE__, 'papo_plugin_activate' );
 
 define( 'PAPO_VERSION', '0.0.1' );
-define( 'PAPO_PATH', plugins_url( '/', __FILE__ ) );
+define( 'PAPO_URL', plugins_url( '/', __FILE__ ) );
+define( 'PAPO_PATH', plugin_dir_path(__FILE__ ) );
 
+require_once( 'includes/templates.php' );
 require_once( 'includes/enqueues.php' );
 require_once( 'includes/functions.php' );

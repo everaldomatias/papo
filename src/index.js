@@ -1,10 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import EntradaComponente from './EntradaComponente';
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import Header from "./Header"
+import Content from "./Content"
+import Footer from "./Footer"
 
-ReactDOM.render(
+const container = document.getElementById('root')
+const root = createRoot(container)
+
+root.render(
     <React.StrictMode>
-        <EntradaComponente />
-    </React.StrictMode>,
-    document.getElementById('root')
+        <Header />
+        <Content />
+        <Footer />
+    </React.StrictMode>
 )
