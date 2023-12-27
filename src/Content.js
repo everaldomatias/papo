@@ -1,8 +1,14 @@
 import React from 'react'
+import ChatPosts from "./ChatPosts";
+import PostForm from "./PostForm";
+
 
 function Content() {
     return (
-        <h1>Content</h1>
+        <>
+            <ChatPosts />
+            <PostForm />
+        </>
     )
 }
 
